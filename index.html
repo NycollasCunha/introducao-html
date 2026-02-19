@@ -1,7 +1,153 @@
 <html>
   <head>
-    <title>The Witcher</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página - Módulo I - Primeiros Passos com HTM</title>
   </head>
 
-  <body></body>
+  <body>
+    <h1>Módulo 1 - Primeiros passos com HTML</h1>
+    <hr/>
+
+    <h2 id="indice">Índice</h2>
+    <ul>
+      <li><a href="#hist-comp">História dos computadores</a></li>
+      <li><a href="#clients">O que são <em>Clients</em>?</a></li>
+      <li><a href="#servers">O que são <em>Servers</em>?</a></li>
+      <li><a href="#html">Como é a estrutura básica de um <strong>HTML</strong>?</a></li>
+      <li><a href="#listas">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+    </ul>
+    
+    <h2 id="hist-comp">História dos computadores</h2>
+    <p>A evolução dos computadores passou de máquinas mecânicas 
+      enormes para dispositivos pequenos e extremamente 
+      poderosos, capazes de executar bilhões de operações 
+      por segundo.
+    </p>
+    <ol>
+      <li>
+        <h4>Primeiras Máquinas de Cálculo (antes do século XX)</h4>
+        <ul>
+          <li>Ábaco (cerca de 2.500 a.C.) - primeiro instrumento para cálculos.</li>
+          <li>No século <strong>XVII</strong>, matemáticos como <u>Blaise Pascal</u> criaram calculadoras mecânicas.</li>
+          <li>No século <strong>XIX</strong>, <u>Charles Babbage</u> projetou a <mark>Máquina Analítica</mark>, considerada o conceito inicial de computador programável.</li>
+          <li><u>Ada Lovelace</u> é reconhecida como a primeira programadora da história.</li>
+        </ul>
+      </li>
+
+      <li>
+        <h4>Primeira Geração (1940-1956) - Válvulas</h4>
+        <ul>
+          <li>Surgem os primeiros computadores eletrônicos.</li>
+          <li>Funcionavam com válvulas gigantes e consumiam muita energia.</li>
+          <li>Exemplo famoso: <u>ENIAC (1945)</u>, usado para cálculos militares.</li>
+          <li>Eram enormes, caros e difíceis de programar.</li>
+        </ul>
+      </li>
+      
+      <li>
+        <h4>Segunda Geração (1956-1963) - Transistores</h4>
+        <ul>
+          <li>As válvulas foram substituídas por transistores.</li>
+          <li>Computadores ficaram menores, mais rápidos e mais confiáveis.</li>
+          <li>Surgem as primeiras linguagens como <em>FORTRAN</em> e <em>COBOL</em>.</li>
+        </ul>
+      </li>
+
+      <li>
+        <h4>Terceira Geração (1964-1971) - Circuitos Integrados</h4>
+        <ul>
+          <li>Uso de chips (circuitos integrados).</li>
+          <li>Computadores ficaram ainda menores e mais potentes.</li>
+          <li>Empresas como a <u>IBM</u> se destacaram nesse período.</li>
+        </ul>
+      </li>
+
+      <li>
+        <h4>Quarta Geração (1971-presente) - Microprocessadores</h4>
+        <ul>
+          <li>Criação do microprocessador (CPU em um único chip).</li>
+          <li>Surgem os computadores pessoais (PCs).</li>
+          <li>Empresas como <u>Apple</u> e <u>Microsoft</u> revolucionaram o mercado.</li>
+          <li>Popularização da internet nos anos 1990.</li>
+        </ul>
+      </li>
+    </ol>
+    <h5><a href="#indice">&larr;</a></h5>
+
+    <h2 id="clients">O que são Clients?</h2>
+    <p>Um Client é quem faz a solicitação. Ele pede alguma informação ou serviço.</p>
+    <ul>
+      <h4>Exemplos:</h4>
+      <li>Seu navegador (Chrome, Edge, etc.)</li>
+      <li>Um aplicativo de banco</li>
+      <li>Um jogo online instalado no seu computador</li>
+      <li>Um app de delivery no celular</li>
+    </ul>
+    <h5><a href="#indice">&larr;</a></h5>
+
+    <h2 id="servers">O que são Servers?</h2>
+    <p>Um Server é quem responde à solicitação.</p>
+    <ul>
+      <p>Ele:</p>
+      <li>Recebe pedidos</li>
+      <li>Processa dados</li>
+      <li>Envia respostas</li>
+    </ul>
+    <p>Geralmente é um computador potente rodando 24h por dia.</p>
+    <h5><a href="#indice">&larr;</a></h5>
+
+    <h2 id="html">Como é a estrutura básica de um HTML</h2>
+    <p>A estrutura básica de um documento HTML é simples e segue um padrão bem definido:</p>
+    <ol>
+      <li>
+        <h4>&lt;!DOCTYPE html&gt;</h4>
+          <p>Indica ao navegador que estamos usando HTML5.</p>
+          <p>É sempre a primeira linha do documento.</p>
+      </li>
+
+      <li>
+        <h4>&lt;html&gt;</h4>
+        <p>É a raiz do documento.</p>
+        <p>O atributo lang="pt-BR" informa o idioma da página (importante para SEO e acessibilidade).</p>
+      </li>
+
+      <li>
+        <h4>&lt;head&gt;</h4>
+        <p>Contém informações sobre a página, mas que não aparecem diretamente no conteúdo visível.</p>
+        <ul>
+          <p>Principais elementos:</p>
+          <li>&lt;meta charset="UTF-8"&gt; → Define a codificação (permite acentos corretamente).</li>
+          <li>&lt;meta name="viewport"&gt; → Responsividade em dispositivos móveis.</li>
+          <li>&lt;title&gt; → Nome que aparece na aba do navegador.</li>
+        </ul>
+      </li>
+
+      <li>
+        <h4>&lt;body&gt;</h4>
+        <ul>
+          <p>Aqui fica todo o conteúdo visível da página:</p>
+          <li>Títulos (&lt;h1&gt; até &lt;h6&gt;)</li>
+          <li>Parágrafos (&lt;p&gt;)</li>
+          <li>Imagens (&lt;img&gt;)</li>
+          <li>Links (&lt;a&gt;)</li>
+          <li>Listas (&lt;ul&gt;, &lt;ol&gt;)</li>
+          <li>Divs (&lt;div&gt;)</li>
+          <li>etc.</li>
+        </ul>
+      </li>
+    </ol>
+    <h5><a href="#indice">&larr;</a></h5>
+
+    <h2 id="listas">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+    <p>
+      A principal diferença entre listas ordenadas (&lt;ol&gt;) e não ordenadas (&lt;ul&gt;) 
+      no HTML é a presença de hierarquia e numeração. Listas ordenadas (&lt;ol&gt;) 
+      usam números ou letras para sequência, ideais para passos, tutoriais ou rankings. 
+      Listas não ordenadas (&lt;ul&gt;) usam marcadores (bullets) e são usadas para itens 
+      onde a ordem não importa.
+    </p>
+    <h5><a href="#indice">&larr;</a></h5>
+  </body>
 </html>
